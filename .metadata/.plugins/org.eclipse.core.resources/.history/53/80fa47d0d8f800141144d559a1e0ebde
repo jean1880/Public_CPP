@@ -1,0 +1,21 @@
+/*
+ * WoodyFurniture.cpp
+ *
+ *  Created on: May 12, 2015
+ *      Author: jdesroches
+ */
+
+#include "WoodyFurniture.h"
+
+namespace std {
+
+WoodyFurniture::WoodyFurniture() {
+	// TODO Auto-generated constructor stub
+
+}
+
+WoodyFurniture::~WoodyFurniture() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace std */

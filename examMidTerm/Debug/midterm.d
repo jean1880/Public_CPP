@@ -1,0 +1,1 @@
+midterm.d: ../midterm.cpp

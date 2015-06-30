@@ -1,0 +1,10 @@
+#include <iostream>
+
+namespace std{
+	void DisplayMenu(){
+		cout << "Please select which program you wish to run, to exit type --exit, for help --help" << endl
+				<< "1) Fraction Calculator"<<endl;
+	}
+
+	void GetOption
+}

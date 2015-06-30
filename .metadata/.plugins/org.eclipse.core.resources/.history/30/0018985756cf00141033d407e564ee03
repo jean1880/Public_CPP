@@ -1,0 +1,27 @@
+/*
+ * War.h
+ *
+ *  Created on: Mar 20, 2015
+ *      Author: jdesroches
+ */
+
+#ifndef WAR_H_
+#define WAR_H_
+
+class War {
+	public:
+		War(){
+			// Notify App has started
+			std::cout<<"Starting War"<<std::endl;
+
+		};
+		virtual ~War(){
+			// Notify App has now ended
+			std::cout<<"Exiting War";
+
+		};
+
+};
+
+
+#endif /* WAR_H_ */

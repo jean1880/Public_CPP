@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;Clock.ino&apos; to &apos;ArduinoClock&apos;" description="Move &apos;Clock.ino&apos; to &apos;ArduinoClock&apos;" destination="/ArduinoClock" element1="Clock/Clock.ino" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1426377254411" updateReferences="true"/>
+</session>

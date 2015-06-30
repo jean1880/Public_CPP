@@ -1,0 +1,24 @@
+/*
+ * Card.h
+ *
+ *  Created on: Mar 20, 2015
+ *      Author: jdesroches
+ */
+
+#ifndef CARD_H_
+#define CARD_H_
+
+
+struct Card{
+	int value;
+	char** suite;
+	char** charValue;
+};
+
+enum CardCharValue{
+	"one",
+	"two",
+	"three"
+}
+
+#endif /* CARD_H_ */

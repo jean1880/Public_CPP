@@ -1,0 +1,16 @@
+#include <string>
+#include <iostream>
+
+int GetInteger();
+namespace std{
+	int GetInteger(){
+
+	}
+}
+
+
+int main(){
+
+}
+
+

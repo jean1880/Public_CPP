@@ -1,0 +1,8 @@
+#include <iostream>
+
+namespace std{
+	void DisplayMenu(){
+		cout << "Please select which program you wish to run" << endl
+				<< "1) Fraction Calculator"<<endl;
+	}
+}

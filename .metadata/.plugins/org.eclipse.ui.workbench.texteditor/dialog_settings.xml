@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="for" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="size"/>
+			<item value="for"/>
+			<item value="browser"/>
+			<item value="maxi"/>
+			<item value="uzbl"/>
+			<item value="WINDOW.SIZE.Y"/>
+			<item value="WINDOW.SIZE.X"/>
+			<item value="WINDOW.POSITION.Y"/>
+		</list>
+		<list key="replacehistory">
+			<item value="WINDOW_SIZE_Y"/>
+			<item value="WINDOW_SIZE_X"/>
+			<item value="WINDOW_POSITION_Y"/>
+			<item value="WINDOW_POSITION_X"/>
+			<item value="perimeter"/>
+			<item value="rectangle"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="327" key="DIALOG_WIDTH"/>
+		<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="453" key="DIALOG_HEIGHT"/>
+		<item value="180" key="DIALOG_X_ORIGIN"/>
+		<item value="215" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

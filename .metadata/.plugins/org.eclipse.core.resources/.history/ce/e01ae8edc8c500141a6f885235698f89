@@ -1,0 +1,193 @@
+################################
+# Schedule remote file updates
+# author: Jean-Luc Desroches
+# contact: jean18801880@gmail.com
+################################
+
+from datetime import datetime, timedelta
+import json, urllib2, urllib, db, queries, assets_helper, uuid, pprint, logging, os
+from settings import settings, DEFAULTS
+from os import path
+
+token = 'c475175a6260771869d54f2586a047972dba6e31'
+idrpi_units = 1
+server_addr = 'http://dev.o2k.org/server/'
+
+################################################
+# Updates local asset with changes in the 
+# remote server
+################################################
+def update_asset(local_asset, data):    
+    try:
+        # Set active status
+        if data[u'status'] == '1':
+            is_active = True
+        else:
+            is_active = False
+        # set no cache policy
+        if data[u'nocache'] == '1':
+            no_cache = True
+        else:
+            no_cache = False
+        # due to time zone conflicts, manually subtract 5 hours to account for eastern standard time
+        start_date = datetime.strptime(data[u'start_date'], "%Y-%m-%d %H:%M:%S") + timedelta(hours=5)
+        end_date = datetime.strptime(data[u'start_date'], "%Y-%m-%d %H:%M:%S") + timedelta(hours=5)
+        
+        #write asset data from server
+        asset_data = {
+                'asset_id': data[u'remote_id'],
+                'name': data[u'name'],
+                'mimetype': data[u'mimetype'],
+                'is_active': is_active,
+                'nocache': no_cache,
+                'play_order': data[u'play_order'],
+                'duration': data[u'duration'],
+                'end_date': datetime.strptime(data[u'end_date'], "%Y-%m-%d %H:%M:%S"),
+                'start_date': datetime.strptime(data[u'start_date'], "%Y-%m-%d %H:%M:%S"),
+                'is_enabled': is_active
+        } 
+        
+        if data[u'mimetype'] == 'web':            
+            asset_data['uri'] = data[u'uri']
+        # update asset
+        with db.conn(settings['database']) as conn:
+            return assets_helper.update(conn, asset_data['asset_id'], asset_data)
+        
+    except urllib2.HTTPError as err:
+       if err.code == 404:
+           logging.info( "Page not found!")
+       elif err.code == 403:
+           logging.info( "Access denied!")
+       else:
+           logging.info( "Something happened! Error code")
+    except urllib2.URLError as err:
+        logging.info( "URL ERROR")
+        logging.info(err)
+    except Exception as err:
+        logging.info( "UNKNOWN ERROR")
+        logging.info(err)
+
+################################################
+# Adds asset to the local database
+################################################
+def add_asset(data):
+    try:
+        # Set active status
+        if data[u'status'] == '1':
+            is_active = True
+        else:
+            is_active = False
+        
+        if data[u'nocache'] == '1':
+            no_cache = True
+        else:
+            no_cache = False
+        
+        # write asset data    
+        asset_data = {
+                'asset_id': uuid.uuid4().hex,
+                'name': data[u'name'],
+                'mimetype': data[u'mimetype'],
+                'is_active': is_active,
+                'nocache': data[u'nocache'],
+                'duration': data[u'duration'],
+                'play_order': data[u'play_order'],
+                'end_date': datetime.strptime(data[u'end_date'], "%Y-%m-%d %H:%M:%S"),
+                'start_date': datetime.strptime(data[u'start_date'], "%Y-%m-%d %H:%M:%S"),
+                'is_enabled': is_active
+        }
+        if data[u'mimetype'] != 'web':
+            # retrieve and save remote file to local assets
+            file = urllib.urlretrieve(server_addr + data[u'uri'],settings['assetdir']+'/'+asset_data['asset_id'])
+            asset_data['uri'] = settings['assetdir']+'/'+asset_data['asset_id']
+        else:
+            asset_data['uri'] = data[u'uri']
+                
+        # pass asset id to server
+        params = urllib.urlencode({'token':token, 'idrpi_units': idrpi_units,'idasset':data['idassets'], 'assetToken': asset_data['asset_id']})
+        f = urllib2.urlopen(server_addr + "server.php?request=updateRemoteID", params)
+        # return asset creation 
+        with db.conn(settings['database']) as conn:
+            return assets_helper.create(conn, asset_data)
+    except urllib2.HTTPError as err:
+       if err.code == 404:
+           logging.info( "Page not found!")
+       elif err.code == 403:
+           logging.info( "Access denied!")
+       else:
+           logging.info( "Something happened! Error code")
+    except urllib2.URLError as err:
+        logging.info( "URL ERROR")
+        logging.info(err)
+    except Exception as err:
+        logging.info( "Unknown ERROR")
+        logging.info(err)
+
+##################################################
+# Queries remote asset list, and adds them to local 
+# collection or updates local collection
+##################################################
+def sync_assets(db_mtime):
+    try:
+       ## fix database time
+        db_mtime = db_mtime - timedelta(hours=5)
+        """Load settings and set the log level."""
+        settings.load()
+        logging.getLogger().setLevel(logging.DEBUG if settings['debug_logging'] else logging.INFO)
+        
+        ## Encode paramaters and request assets form server ##
+        params = urllib.urlencode({'token':token, 'idrpi_units':idrpi_units})
+        f_time = urllib2.urlopen(server_addr + "server.php?request=getPlaylistTimestamp", params)
+        time = json.loads(f_time.read())
+        remote_mtime = datetime.strptime(time[u'time'], "%Y-%m-%d %H:%M:%S")
+        f_time.close()
+        
+        with db.conn(settings['database']) as conn:
+            local_assets = assets_helper.read(conn)
+            logging.info("check for database updates")
+            # if the remote database time is  ahead of the local database time, sync assets from the server
+            if remote_mtime > db_mtime or len(local_assets) == 0:
+                logging.info( "Changes detected in remote playlist or nolocal assets detected")
+                if remote_mtime > db_mtime:
+                    logging.info(str(remote_mtime) + ">" + str(db_mtime))
+                else:
+                    logging.info("Number of assets: " + str(len(local_assets))) 
+                f = urllib2.urlopen(server_addr + "server.php?request=getAssets", params)
+                
+                ## read results
+                json_encoded = json.loads(f.read())
+                f.close()
+                                            
+                # using database loop through returned asset collection and add or 
+                # drop all assets from the database and download changes from the server
+                if len(local_assets) > 0:
+                    ## loop through existing assets to see if it needs to be updated or deleted
+                    for local_asset in local_assets:                        
+                        try:
+                            if local_asset['uri'].startswith(settings['assetdir']):
+                                os.remove(local_asset['uri'])                   
+                        except OSError as err:
+                            logging.info(err)                    
+                        # remove asset from database     
+                        assets_helper.delete(conn, local_asset['asset_id'])
+                            
+                    ## loop through remote assets and search for asset matching this asset id
+                    for asset in json_encoded:
+                        add_asset(asset)
+                else:
+                    for asset in json_encoded:
+                        add_asset(asset)
+                        
+    except urllib2.HTTPError as err:
+       if err.code == 404:
+           logging.info( "Page not found!")
+       elif err.code == 403:
+           logging.info( "Access denied!")
+       else:
+           logging.info( "Something happened! Error code")
+    except urllib2.URLError as err:
+        logging.info( "URL ERROR")
+        logging.info(err )
+    except Exception as err:
+        logging.info( "UNKNOWN ERROR line 200")
+        logging. info(err )

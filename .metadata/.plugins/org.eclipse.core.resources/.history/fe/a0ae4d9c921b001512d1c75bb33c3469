@@ -1,0 +1,38 @@
+#include "question1.h"
+// question 3 http://ideone.com/4lX6Gb
+
+namespace std{
+	void DoQuestion1(){
+		const unsigned int FRACTION_COUNT = 2;
+		vector<int> fraction[FRACTION_COUNT];
+		bool exit = false;
+		const char separator    = ' ';
+		const int cellWidth     = 14;
+
+		// print welcome message to the user
+		PrintWelcomeMessage();
+
+		// get fractions from user
+		for(unsigned int i = 0; i < FRACTION_COUNT; i++){
+			GetFraction((int)(i + 1), fraction[i]);
+			PrintFraction((int)(i + 1), fraction[i]);
+		}
+
+		PrintTableHead(cellWidth,separator);
+		// calculate each mathematical operation
+		for(int i = 0; i < 4; i++){
+			char operand = ' ';
+			vector<int> result;
+			GetCalculation(i, fraction, operand, result);
+			PrintTableLine(fraction,result,operand,cellWidth,separator);
+		}
+	}
+}
+
+int main(){
+	// perform first question
+	std::DoQuestion1();
+}
+
+
+

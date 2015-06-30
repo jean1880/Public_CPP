@@ -1,0 +1,1 @@
+kilotomiles.d: ../kilotomiles.cpp

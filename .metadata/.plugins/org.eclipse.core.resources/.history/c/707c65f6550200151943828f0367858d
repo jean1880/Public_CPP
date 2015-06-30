@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+class waterProgram{
+
+};
+int main(){
+	try{
+
+	}catch(exception &e){
+		cout << e.exception();
+	}
+
+	// exit program
+	return 0;
+}

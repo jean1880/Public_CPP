@@ -1,0 +1,34 @@
+/**
+ * Handles calculating sales values for Woody's Furniture
+ * @author Jean-Luc Desroches
+ */
+#include <iostream>
+using namespace std;
+
+struct chair{
+	string name
+};
+
+/**
+ * Main class for woody's furniture
+ * @class WoodyFurniture
+ */
+class WoodyFurniture{
+private:
+	string Furniture[] = {
+			"American Colonial",
+			"Modern",
+			"French Classical"
+	};
+
+public:
+	static void begin(){
+
+	}
+};
+
+
+int main() {
+	WoodyFurniture::begin();
+	return 0;
+}

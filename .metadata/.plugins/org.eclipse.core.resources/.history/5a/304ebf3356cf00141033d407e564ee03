@@ -1,0 +1,31 @@
+/*
+ * War.cpp
+ *
+ *  Created on: Mar 20, 2015
+ *      Author: jdesroches
+ */
+
+#include "iostream"
+#include "War.h"
+#include "IntArrayShuffle.h"
+
+War::War() {
+	// Notify App has started
+	std::cout<<"Starting War"<<std::endl;
+
+}
+
+War::~War() {
+	// Notify App has now ended
+	std::cout<<"Exiting War";
+
+}
+
+int main(){
+	try {
+		War();
+		return 0;
+	} catch (int e) {
+		return e;
+	}
+}

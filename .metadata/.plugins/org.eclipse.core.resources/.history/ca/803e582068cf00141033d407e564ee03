@@ -1,0 +1,118 @@
+/*
+ * War.h
+ *
+ *  Created on: Mar 20, 2015
+ *      Author: jdesroches
+ */
+
+#ifndef WAR_H_
+#define WAR_H_
+#include "IntArrayShuffle.h"
+#include "Card.h"
+
+
+/**
+ * Main Game class, allows user to play a card game of War with the computer
+ * @class War
+ */
+class War {
+	public:
+		War(){
+			// Notify App has started
+			std::cout<<"Starting War"<<std::endl;
+			BuildDeck();
+			ShuffleDeck();
+		};
+		virtual ~War(){
+			// Notify App has now ended
+			std::cout<<"Exiting War";
+		};
+	private:
+		Card Deck[52];
+		int SuiteSize = 13;
+		int cur;
+		int count();
+		void BuildSuite();
+		void ShuffleDeck();
+
+		/**
+		 * Builds the starting Deck
+		 * @method BuildDeck
+		 */
+		void BuildDeck(){
+			// define suite names
+			char *s[] = {
+					"hearts",
+					"diamonds",
+					"spades",
+					"clubs"
+			};
+
+			// loop through suites and compile suite set
+			for(int i = 0; i < countCharArray(s); i++){
+				BuildSuite(s[i]);
+			}
+
+		}
+
+		/**
+		 * Return the array count of an array of character arrays
+		 * @method countCharArray
+		 * @param {char*} arr[]
+		 */
+		template<int N>
+		int countCharArray(char* (&arr)[N])
+		{
+			return N;
+		}
+
+		/**
+		 * Return the array count of an array of cards
+		 * @method countCharArray
+		 * @param {char*} arr[]
+		 */
+		template<int N>
+		int countCardArray(Card (&arr)[N])
+		{
+			return N;
+		}
+
+
+		/**
+		 * Build the card set for a suite
+		 * @method BuildSuite
+		 * @param {char[]} suite
+		 */
+		void BuildSuite(char* suite){
+
+			for(int i = 0; i < SuiteSize; i++){
+				// create card to be inserted into the deck
+				Card newCard;
+				newCard.suite = suite;
+				newCard.value = i;
+				newCard.charValue = CardCharValue[i];
+
+				// pass card into deck
+				this->Deck[this->cur] = newCard;
+				// temporarily spew results
+				std::cout<<this->Deck[this->cur].charValue
+										<<" of "<<this->Deck[this->cur].suite
+										<<"="<<this->Deck[this->cur].value
+										<<std::endl;
+				this->cur++;
+
+			}
+		}
+
+		/**
+		 * Shuffles the deck
+		 * @method ShuffleDeck
+		 */
+		void ShuffleDeck(){
+
+		}
+
+};
+
+
+#endif /* WAR_H_ */

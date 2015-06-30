@@ -1,0 +1,31 @@
+/**
+ * Handles calculating sales values for Woody's Furniture
+ * @author Jean-Luc Desroches
+ */
+#include <iostream>
+
+
+/**
+ * Main class for woody's furniture
+ * @class WoodyFurniture
+ */
+class WoodyFurniture{
+private:
+	enum furniture {
+		AMERICAN_COLONIAL,
+		MODERN,
+		FRENCH_CLASSICAL
+	};
+
+
+public:
+	static bool begin(){
+
+	}
+};
+
+
+int main() {
+	while(WoodyFurniture::begin()){};
+	return 0;
+}

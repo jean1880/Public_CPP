@@ -1,0 +1,35 @@
+#include "question1.h"
+// question 3 http://ideone.com/4lX6Gb
+
+int main(){
+	const unsigned int FRACTION_COUNT = 2;
+	std::vector<int> fraction[FRACTION_COUNT];
+	bool exit = false;
+    const char separator    = ' ';
+    const int cellWidth     = 14;
+
+	// print welcome message to the user
+	std::PrintWelcomeMessage();
+
+	// loop through program until user wishes to stop
+	do{
+		// get fractions from user
+		for(unsigned int i = 0; i < FRACTION_COUNT; i++){
+			std::GetFraction((int)(i + 1), fraction[i]);
+			std::PrintFraction((int)(i + 1), fraction[i]);
+		}
+
+		std::PrintTableHead(cellWidth,separator);
+		// calculate each mathematical operation
+		for(int i = 0; i < 4; i++){
+			char operand = ' ';
+			std::vector<int> result;
+			std::GetCalculation(i, fraction, operand, result);
+			std::PrintTableLine(fraction,result,operand,cellWidth,separator);
+		}
+		exit = true;
+	}while(!exit);
+}
+
+
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Assignment 1.1/MenuInterface&apos; to &apos;MenuInterface.h&apos;" description="Rename resource &apos;MenuInterface&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="MenuInterface" name="MenuInterface.h" stamp="1435275910416" updateReferences="true"/>
+</session>

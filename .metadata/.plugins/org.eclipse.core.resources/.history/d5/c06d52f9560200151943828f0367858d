@@ -1,0 +1,40 @@
+/**
+ * This program gets a user for their quarterly water bills for the last four quarters,
+ * and returns their average output, and whether they should be using less water
+ * @author Jean-Luc Desroches
+ * @date 2015/05/24
+ */
+
+#include <iostream>
+#include <array>
+
+using namespace std;
+class WaterProgram{
+private:
+
+	bool main (){
+		array<float, 4> quarterlyBill;
+		for (int var = 0; var < max; ++var) {
+
+		}
+		return false;
+	}
+
+
+public:
+	WaterProgram(){
+		while(!main());
+	}
+};
+
+
+int main(){
+	try{
+		WaterProgram waterProgram();
+	}catch(exception &e){
+		cout << e.what();
+	}
+
+	// exit program
+	return 0;
+}

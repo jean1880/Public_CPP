@@ -1,0 +1,46 @@
+/*
+ * War.h
+ *
+ *  Created on: Mar 20, 2015
+ *      Author: jdesroches
+ */
+
+#ifndef WAR_H_
+#define WAR_H_
+#include "IntArrayShuffle.h"
+#include "Card.h"
+
+/**
+ * Main Game class, allows user to play a card game of War with the computer
+ * @class War
+ */
+class War {
+	public:
+		War(){
+			// Notify App has started
+			std::cout<<"Starting War"<<std::endl;
+			BuildDeck();
+		};
+		virtual ~War(){
+			// Notify App has now ended
+			std::cout<<"Exiting War";
+		};
+	private:
+		Card Deck[52];
+		void BuildSuite();
+
+		void BuildDeck(){
+			char s[] = "hearts";
+			BuildSuite(s, Deck);
+		}
+
+		void BuildSuite(char suite[], Card &Deck[52]){
+			int SuiteSize = 13;
+
+
+		}
+
+};
+
+
+#endif /* WAR_H_ */

@@ -1,0 +1,25 @@
+#include <string>
+#include <iostream>
+
+/**
+ * Methods and functions of resolving the assignment
+ */
+namespace std{
+	int GetInteger(string message){
+		cout << message;
+
+	}
+
+	bool GetFraction(){
+		int numerator = GetInteger("Please enter ");
+		int denominator = GetInteger();
+	}
+}
+
+
+int main(){
+	while(std::GetFraction());
+}
+
+
+

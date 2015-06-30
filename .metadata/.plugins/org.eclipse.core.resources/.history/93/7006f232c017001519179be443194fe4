@@ -1,0 +1,136 @@
+#include <string>
+#include <iostream>
+#include <limits>
+
+/**
+ * Methods and functions of resolving the assignment
+ */
+namespace std{
+
+
+	enum{
+		DIVIDE,
+		MULTIPLY,
+		SUBTRACT,
+		ADD
+	};
+	/**
+	 * Gets an integer, must be positive unless overloaded with bool true
+	 * @method GetInteger
+	 * @param {string} message Prompt displayed to user for input
+	 * @param {bool} allowNegatives [OPTIONAL] If true, allows for user to enter a negative value
+	 */
+	int GetInteger(string message, bool allowNegatives = false){
+		int output;
+		cout << message << endl;
+
+		// try to get input, and ensure input is an integer
+		try{
+			string value;
+			cin >> value;
+
+			// clear cin in case function is called again
+			cin.clear();
+			cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+			output = stoi(value);
+			if(!allowNegatives && output < 0){
+				cout << "Please enter a positive integer only" << endl;
+				output = GetInteger(message, allowNegatives);
+			}
+		}catch(invalid_argument &e){ // input was not an integer
+			cout << "Invalid value entered, please enter a valid value to continue" << endl;
+			output = GetInteger(message);
+		}catch(out_of_range &o){
+			cout << "Value was out of range for an integer, please enter a valid value to continue" << endl;
+			output = GetInteger(message);
+		}catch(exception &e){
+			exit (EXIT_FAILURE);
+		}
+
+		return output;
+	}
+
+	/**
+	 * Get a fraction set
+	 * @method GetFraction
+	 * @param {int} count Fraction count to display to user
+	 * @param {int[2]} fraction Fraction value to fill by reference
+	 */
+	void GetFraction(int count, int (&fraction)[2]){
+		fraction[0] = GetInteger("Please enter the numerator for fraction " + to_string(count), true);
+		fraction[1] = GetInteger("Please enter the denominator for fraction " + to_string(count));
+		if(fraction[1] <= 0){
+			cout << "The denominator cannot be a negative value, or equal to 0" << endl;
+			GetFraction(count, fraction);
+		}
+	}
+
+	int* GetCalculation(int calculation, int (&fraction)[2][2]){
+		int result[2];
+		// get calculation to perform
+		switch(calculation){
+			case DIVIDE:
+				// multiply with reciprocal
+				result[0] = fraction[1][1] * fraction[0][0];
+				result[1] = fraction[1][0] * fraction[0][1];
+
+				break;
+			case MULTIPLY:
+				// multiply with reciprocal
+				result[0] = fraction[1][0] * fraction[0][0];
+				result[1] = fraction[1][1] * fraction[0][1];
+
+				break;
+			case SUBTRACT:
+			case ADD:
+			default:
+				break;
+		};
+	}
+
+	/**
+	 * Prints out a message with what fraction they entered
+	 */
+	void PrintFraction(int count, int fraction[2]){
+		cout << "Fraction " << count << ": " << fraction[0] << "/" << fraction[1] << endl;
+	}
+
+	/**
+	 * Prints out welcome message to the user
+	 * @method PrintWelcomeMessage
+	 */
+	void PrintWelcomeMessage(){
+		cout << "/" << string(50, '*') << "/" << endl;
+		cout << "/*******" << " Welcome to the Fraction Calculator " << "*******/" << endl;
+	}
+}
+
+
+int main(){
+	const unsigned int FRACTION_COUNT = 2;
+	int fraction[FRACTION_COUNT][2];
+	int* result;
+	bool exit = false;
+
+	// print welcome message to the user
+	std::PrintWelcomeMessage();
+
+	// loop through program until user wishes to stop
+	do{
+		// get fractions from user
+		for(unsigned int i = 0; i < FRACTION_COUNT; i++){
+			std::GetFraction((int)(i + 1), fraction[i]);
+			std::PrintFraction((int)(i + 1), fraction[i]);
+		}
+
+		// calculate each mathematical operation
+		for(int i = 0; i < 4; i++){
+			result = std::GetCalculation(i, fraction);
+		}
+
+	}while(!exit);
+}
+
+
+

@@ -1,0 +1,23 @@
+/*
+ * BubbleSort.h
+ *
+ *  Created on: Jun 6, 2015
+ *      Author: jdesroches
+ */
+
+#ifndef BUBBLESORT_H_
+#define BUBBLESORT_H_
+
+namespace std {
+
+class BubbleSort {
+public:
+	BubbleSort();
+	virtual ~BubbleSort();
+	int Sort(int* array);
+private:
+};
+
+} /* namespace std */
+
+#endif /* BUBBLESORT_H_ */

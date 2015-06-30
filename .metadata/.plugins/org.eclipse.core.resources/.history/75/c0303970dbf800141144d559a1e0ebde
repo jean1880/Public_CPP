@@ -1,0 +1,44 @@
+/**
+ * Handles calculating sales values for Woody's Furniture
+ * @author Jean-Luc Desroches
+ */
+#include <iostream>
+using namespace std;
+
+struct chair{
+	string name;
+	float price;
+	int qtySold;
+};
+
+/**
+ * Main class for woody's furniture
+ * @class WoodyFurniture
+ */
+class WoodyFurniture{
+private:
+	static string Furniture[] = {
+			"American Colonial",
+			"Modern",
+			"French Classical"
+	};
+
+	static int getQuantitySold(string furnitureName){
+		int input
+		cout << "Please input the number of " << furnitureName << " sold:" << endl;
+		while(!(cin >> input)){
+			getQuantitySold(furnitureName);
+		}
+	}
+
+public:
+	static void begin(){
+
+	}
+};
+
+
+int main() {
+	WoodyFurniture::begin();
+	return 0;
+}

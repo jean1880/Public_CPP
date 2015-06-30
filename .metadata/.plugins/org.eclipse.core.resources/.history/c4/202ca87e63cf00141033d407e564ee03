@@ -1,0 +1,93 @@
+/*
+ * War.h
+ *
+ *  Created on: Mar 20, 2015
+ *      Author: jdesroches
+ */
+
+#ifndef WAR_H_
+#define WAR_H_
+#include "IntArrayShuffle.h"
+#include "Card.h"
+
+
+/**
+ * Main Game class, allows user to play a card game of War with the computer
+ * @class War
+ */
+class War {
+	public:
+		War(){
+			// Notify App has started
+			std::cout<<"Starting War"<<std::endl;
+			BuildDeck();
+		};
+		virtual ~War(){
+			// Notify App has now ended
+			std::cout<<"Exiting War";
+		};
+	private:
+		Card Deck[52];
+		int cur;
+		void BuildSuite();
+		int count();
+
+		/**
+		 * Builds the starting Deck
+		 * @method BuildDeck
+		 */
+		void BuildDeck(){
+			// define suite names
+			char *s[] = {
+					"hearts",
+					"diamonds",
+					"spades",
+					"clubs"
+			};
+
+			// loop through suites and compile suite set
+			for(int i = 0; i < countCharArray(s); i++){
+				BuildSuite(s[i], Deck);
+			}
+
+			// temporarily spew results
+			for(int i = 0; i < 52; i++){
+				std::cout<<(char*)Deck[i].charValue<<" of "<<(char*)Deck[i].suite<<std::endl;
+			}
+		}
+
+		/**
+		 * Return the array count of an array of character arrays
+		 */
+		template<int N>
+		int countCharArray(char* (&arr)[N])
+		{
+			return N+1;
+		}
+
+		/**
+		 * Build the card set for a suite
+		 * @method BuildSuite
+		 * @param {char[]} suite
+		 * @param {$Card} Deck
+		 */
+		void BuildSuite(char* suite, Card (&Deck)[52]){
+			int SuiteSize = 14;
+
+			for(int i = 0; i < SuiteSize; i++){
+				// create card to be inserted into the deck
+				Card newCard;
+				newCard.suite = (char**)suite;
+				newCard.value = i;
+				newCard.charValue = (char**)CardCharValue[i];
+
+				// pass card into deck
+				Deck[cur] = newCard;
+				this->cur++;
+			}
+		}
+
+};
+
+
+#endif /* WAR_H_ */

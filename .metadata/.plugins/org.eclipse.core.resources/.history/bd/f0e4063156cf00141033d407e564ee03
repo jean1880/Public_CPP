@@ -1,0 +1,18 @@
+/*
+ * War.h
+ *
+ *  Created on: Mar 20, 2015
+ *      Author: jdesroches
+ */
+
+#ifndef WAR_H_
+#define WAR_H_
+
+class War {
+	public:
+		War();
+		virtual ~War();
+};
+
+
+#endif /* WAR_H_ */

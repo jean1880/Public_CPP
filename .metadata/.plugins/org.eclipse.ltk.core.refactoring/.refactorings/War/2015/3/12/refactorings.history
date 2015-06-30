@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;War/IntArrayShuffle&apos; to &apos;IntArrayShuffle.h&apos;" description="Rename resource &apos;IntArrayShuffle&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="IntArrayShuffle" name="IntArrayShuffle.h" stamp="1426891661648" updateReferences="true"/>
+</session>

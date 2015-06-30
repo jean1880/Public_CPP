@@ -1,0 +1,60 @@
+/**
+ * This program gets a user for their quarterly water bills for the last four quarters,
+ * and returns their average output, and whether they should be using less water
+ * @author Jean-Luc Desroches
+ * @date 2015/05/24
+ */
+
+#include <iostream>
+
+using namespace std;
+class WaterProgram{
+private:
+	float quarteylBill[4];
+	void printWelcomeMessage(){
+		cout << '\\' << string(49, '*') << '\\' << endl;
+		cout << '\\' << string(5, '*') << " Welcome to the the Water bill program " << string(5,'*') << '\\' << endl;
+		cout << '\\' << string(49, '*') << '\\' << endl;
+	}
+
+	bool main (){
+		int i = 0;
+
+		printWelcomeMessage();
+		for(float value : quarteylBill){
+			quarteylBill[i] = setBillValue(i);
+			i++;
+		}
+		return false;
+	}
+
+	float setBillValue(int i){
+		float bill;
+		cout << "Please enter your bill for quarter " << i+1 << ':' << endl;
+		while(!(cin >> bill)){
+			cout << "Please enter a numeric value for your bill" << endl;
+			bill = setBillValue(i, bill);
+		}
+		 return bill;
+	}
+
+
+public:
+	void begin(){
+		while(!main()){};
+	}
+};
+
+
+int main(){
+	try{
+		WaterProgram waterProgram;
+		waterProgram.begin();
+		// exit program
+		return 0;
+	}catch(exception &e){
+		cout << e.what();
+		return -1;
+	}
+
+}

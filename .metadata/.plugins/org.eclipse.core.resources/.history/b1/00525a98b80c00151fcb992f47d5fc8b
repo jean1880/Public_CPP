@@ -1,0 +1,33 @@
+/*
+ * BubbleSort.cpp
+ *
+ *  Created on: Jun 6, 2015
+ *      Author: jdesroches
+ */
+
+#include "BubbleSort.h"
+
+namespace std {
+
+BubbleSort::BubbleSort() {
+	// TODO Auto-generated constructor stub
+
+}
+
+BubbleSort::~BubbleSort() {
+	// TODO Auto-generated destructor stub
+}
+
+static void BubbleSort::Sort(int* &array){
+	for (int i = data.length - 1; i >= 0; i--)
+	    {
+	        // bubble up
+	        for (int j = 0; j <= i - 1; j++)
+	        {
+	            if (data[j] > data[j + 1])
+	                swap(data, j, j + 1);
+	        }
+	    }
+}
+
+} /* namespace std */

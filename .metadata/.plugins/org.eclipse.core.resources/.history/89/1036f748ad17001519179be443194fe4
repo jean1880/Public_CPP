@@ -1,0 +1,37 @@
+#include <string>
+#include <iostream>
+
+/**
+ * Methods and functions of resolving the assignment
+ */
+namespace std{
+	int GetInteger(string message){
+		cout << message << endl;
+		try{
+
+		}catch(invalid_argument &e, out_of_range &o){
+
+		}catch(exception &e){
+
+		}
+	}
+
+	void GetFraction(int count){
+		int numerator = GetInteger("Please enter the numerator for fraction " + count);
+		int denominator = GetInteger("Please enter the denominator for fraction " + count);
+	}
+}
+
+
+int main(){
+	const unsigned int FRACTION_COUNT = 2;
+	bool exit = false;
+	do{
+		for(int i = 0; i < FRACTION_COUNT; i++){
+			std::GetFraction(i + 1);
+		}
+	}while(!exit);
+}
+
+
+

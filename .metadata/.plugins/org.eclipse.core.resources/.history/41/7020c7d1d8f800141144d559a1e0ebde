@@ -1,0 +1,21 @@
+/*
+ * WoodyFurniture.h
+ *
+ *  Created on: May 12, 2015
+ *      Author: jdesroches
+ */
+
+#ifndef WOODYFURNITURE_H_
+#define WOODYFURNITURE_H_
+
+namespace std {
+
+class WoodyFurniture {
+public:
+	WoodyFurniture();
+	virtual ~WoodyFurniture();
+};
+
+} /* namespace std */
+
+#endif /* WOODYFURNITURE_H_ */

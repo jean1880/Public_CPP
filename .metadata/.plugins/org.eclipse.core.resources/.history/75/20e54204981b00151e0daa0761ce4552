@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string>
+
+namespace std{
+	enum{
+		EXIT = -1,
+		FRACTION_CALCULATOR
+	};
+
+	void DisplayMenu(){
+		cout << "Please select which program you wish to run, to exit type --exit, to show this menu again type --help" << endl
+				<< "1) Fraction Calculator"<<endl;
+	}
+
+	bool CheckExit(string option){
+		if(option == "-e" || option == "--exit"){
+			return true;
+		}else if(option == "-h" || option == "--help"){
+			DisplayMenu();
+		}
+		return false;
+	}
+
+	int GetOption(){
+		string option;
+		cin >> option;
+		int selected = NULL;
+
+		if(CheckExit(option)){
+			return -1;
+		}else{
+			if(selected == NULL){
+				selected = stoi(option);
+			}
+			return selected;
+		}
+	}
+}

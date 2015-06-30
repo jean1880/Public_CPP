@@ -1,0 +1,33 @@
+/*
+ * War.h
+ *
+ *  Created on: Mar 20, 2015
+ *      Author: jdesroches
+ */
+
+#ifndef WAR_H_
+#define WAR_H_
+#include "IntArrayShuffle.h"
+#include "Card.h"
+
+class War {
+	public:
+		War(){
+			// Notify App has started
+			std::cout<<"Starting War"<<std::endl;
+			BuildDeck();
+		};
+		virtual ~War(){
+			// Notify App has now ended
+			std::cout<<"Exiting War";
+
+		};
+	private:
+
+		void BuildDeck(){
+
+		}
+};
+
+
+#endif /* WAR_H_ */

@@ -1,0 +1,59 @@
+#include <string>
+#include <iostream>
+
+/**
+ * Methods and functions of resolving the assignment
+ */
+namespace std{
+	int GetInteger(string message){
+		int output;
+		cout << message << endl;
+		try{
+			string value;
+			cin >> value;
+			output = stoi(value);
+		}catch(invalid_argument &e){ // input was not an integer
+			cout << "Invalid value entered, please enter a valid value to continue" << endl;
+			output = GetInteger(message);
+		}catch(out_of_range &o){
+			cout << "Value was out of range for an integer, please enter a valid value to continue" << endl;
+			output = GetInteger(message);
+		}catch(exception &e){
+			exit (EXIT_FAILURE);
+		}
+
+		return output;
+	}
+
+	/**
+	 * Get a fraction set
+	 * @param {int} count
+	 */
+	void GetFraction(int count){
+		int numerator = GetInteger("Please enter the numerator for fraction " + count);
+		int denominator = GetInteger("Please enter the denominator for fraction " + count);
+	}
+
+	/**
+	 * Prints out welcome message to the user
+	 */
+	void PrintWelcomeMessage(){
+		cout << "/" << string(50, '*') << "/" << endl;
+		cout << "/**" << "Welcome to the Fraction Calculator" << "**/" << endl;
+	}
+}
+
+
+int main(){
+	const unsigned int FRACTION_COUNT = 2;
+	bool exit = false;
+	std::PrintWelcomeMessage();
+	do{
+		for(int i = 0; i < FRACTION_COUNT; i++){
+			std::GetFraction(i + 1);
+		}
+	}while(!exit);
+}
+
+
+

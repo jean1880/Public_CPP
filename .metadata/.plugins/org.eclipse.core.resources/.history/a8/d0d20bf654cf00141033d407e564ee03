@@ -1,0 +1,30 @@
+/*
+ * War.cpp
+ *
+ *  Created on: Mar 20, 2015
+ *      Author: jdesroches
+ */
+
+#include "iostream"
+#include "War.h"
+
+War::War() {
+	// TODO Auto-generated constructor stub
+	std::cout<<"Starting War"<<std::endl;
+
+}
+
+War::~War() {
+	// TODO Auto-generated destructor stub
+	std::cout<<"Exiting War";
+
+}
+
+int main(){
+	try {
+		War();
+		return 0;
+	} catch (int e) {
+		return e;
+	}
+}
