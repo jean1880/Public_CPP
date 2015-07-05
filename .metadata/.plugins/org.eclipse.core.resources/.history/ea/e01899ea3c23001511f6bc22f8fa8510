@@ -31,12 +31,6 @@ namespace std{
 				<< "-h | --help        Shows menu interface" << endl;
 	}
 
-	/**
-	 * Check if user has requested to exit, or show menu, otherwise, return -3 to flag a continue parameter
-	 * @method CheckExit
-	 * @param {string} option  User menu input
-	 * @return {int}
-	 */
 	int CheckExit(string option){
 		if(option == "-e" || option == "--exit"){
 			return -1;
@@ -46,11 +40,6 @@ namespace std{
 		return -3;
 	}
 
-	/**
-	 * Gets input from the user, on which option they wish to run, returns the selected input as an integer option
-	 * @method GetOption
-	 * @return {int}
-	 */
 	int GetOption(){
 		string option;
 		cin >> option;

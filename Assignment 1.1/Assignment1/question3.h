@@ -1,13 +1,19 @@
 /**
- * Question 3 solution
+ * Question 3 solution, due to time, abandoned final mile on this question, it is sorting the valujes, and will grab highest value and 
+ * place it up froont but had trouble getting it to properly sort all of the values as needed.
  * @author Jean-Luc Desroches
  */
 
 #include <iostream>
 #include <string>
+#include <vector>
 #include <limits>
 
 namespace std{
+	/**
+	 * Displays this programs menu to the user
+	 * @method ShowArrayMenu
+	 */
 	void ShowArrayMenu(){
 		cout << "/************** Array Max Sort **************/" << endl;
 		cout << "/* This program takes an array of integers    */" << endl;
@@ -19,25 +25,20 @@ namespace std{
 		cout << "/**********************************************/" << endl;
 	}
 
-	void InsertIntoSortedValues(vector<int> &sortedIntegers, int integer, int n){
-		if(sortedIntegers.size() == 0 || n == 0){
-			sortedIntegers.push_back(integer);
-		}else if(integer > sortedIntegers[n]){
-			sortedIntegers.insert(sortedIntegers.begin() + n,integer);
-		}else if(integer == sortedIntegers[n]){
-			sortedIntegers.insert(sortedIntegers.begin() + (n-1),integer);
-		}else{
-			InsertIntoSortedValues(sortedIntegers, integer, n-1);
-		}
-	}
-
+	/**
+	 * Sorts the array of integers to build the largest possible number (Could not get this fully working)
+	 * @method SortValues
+	 * @param {vector<int>} integerArray
+	 * @return {vector<int>}
+	 */
 	vector<int> SortValues(vector<int> integerArray){
 		vector<int> sortedIntegers;
 
 		int max = 0;
+		// loop through each integer in the array
 		for(int i = integerArray.size() - 1; i >= 0; i--){
 			int tens = integerArray[i] / 10, ones = integerArray[i] % 10;
-			if(tens > max){
+			if(tens > max){ // if there was a tens column value, and it is the largest number available, set the first number in the sorted array with this value
 				max = tens;
 				sortedIntegers.insert(sortedIntegers.begin(),integerArray[i]);
 			}else if(tens == 0 && ones > max){
@@ -52,7 +53,7 @@ namespace std{
 					}else if(tens != 0 && tens == tens_sub && ones_sub > ones){
 						sortedIntegers.insert(sortedIntegers.begin() + x, integerArray[i]);
 						break;
-					}else if(tens == 0 && tens_sub ==0 && ones_sub > ones){
+					}else if(tens == 0 && tens_sub == 0 && ones_sub > ones){
 						sortedIntegers.insert(sortedIntegers.begin() + x, integerArray[i]);
 						break;
 					}else{
@@ -66,6 +67,11 @@ namespace std{
 		return sortedIntegers;
 	}
 
+	/**
+	 * Gets input from the user, and checks if the user wishes to access the menu, exit the program, or sort the values, if none of theses, return the integer inputed
+	 * @method GetInput
+	 * @return {int}
+	 */
 	int GetInput(){
 		string input;
 		int value;
@@ -103,6 +109,10 @@ namespace std{
 		return value;
 	}
 
+	/**
+	 * Runs quesiton 3 in a loop until exit command is given
+	 * @method RunQuestion3
+	 */
 	bool RunQuestion3(){
 		vector<int> integerArray;
 
@@ -120,6 +130,7 @@ namespace std{
 						cout << integerArray[i];
 					}
 					cout << endl;
+					integerArray.clear();
 				}else{
 					cout << "You need at least two integers before the calculation can run" << endl;
 				}

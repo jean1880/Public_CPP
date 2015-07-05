@@ -1,5 +1,5 @@
 /**
- * This file handle question one, and performs multiplication, division, subtraction and addition
+ * This file handles question one, and performs multiplication, division, subtraction and addition
  * of two fraction provided by the user
  * @author Jean-Luc Desroches
  * @date 06/22/2015

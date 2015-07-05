@@ -1,6 +1,6 @@
 /**
  * Handles question 2 of the assignment
- * @author Jean-Luc Desroches
+ * @athor Jean-Luc Desroches
  */
 
 #include <iostream>
@@ -44,13 +44,6 @@ namespace std{
 		return details;
 	}
 
-	/**
-	 * Calculates the average of a student from vector collection of a line, averaage is returned by reference
-	 * @method CalculateAverage
-	 * @param {vector<string>} student
-	 * @param {int} grades
-	 * @param {float} average
-	 */
 	void CalculateAverage (vector<string> student, int grades, float &average){
 		float sum = 0;
 
@@ -61,12 +54,6 @@ namespace std{
 		average = sum/grades;
 	}
 
-	/**
-	 * Calculates the grade value based on grade of student
-	 * @methos CalculateGrade
-	 * @param {const int}
-	 * @return {char}
-	 */
 	char CalculateGrade(const int grade){
 		char value;
 		if( grade >= 90){
@@ -83,15 +70,6 @@ namespace std{
 		return value;
 	}
 
-	/**
-	 * Prints out the averages of each test
-	 * @method PrintAverages
-	 * @param {vector<float>} testAverages
-	 * @param {vector<float>} studentAverages
-	 * @param {int} students
-	 * @param {int} tests
-	 * @param {const int} formatWidth
-	 */
 	void PrintAverages(vector<float> testAverages, vector<float> studentAverages, int students, int tests, const int formatWidth){
 		cout << setw(formatWidth) << "test avg";
 		for(int i = 0; i < tests; i++){
@@ -106,15 +84,6 @@ namespace std{
 		cout << setw(formatWidth) << sum/students << endl;
 	}
 
-	/**
-	 * Prints out grades of the student to the table
-	 * @method PrintGrades
-	 * @param {int} grades
-	 * @param {vector<string>} studentGrades
-	 * @param {float} studentAverage
-	 * @param {char} grade
-	 * @param {const int} formatWidth
-	 */
 	void PrintGrades(int grades, vector<string> studentGrades, float studentAverage, char grade, const int formatWidth){
 		cout << setw(formatWidth) << studentGrades[0];
 
@@ -125,38 +94,18 @@ namespace std{
 		cout << setw(formatWidth) << studentAverage << setw(formatWidth) << grade << endl;
 	}
 
-	/**
-	 * Updates running tally of test scores by reference
-	 * @method UpdateTotals
-	 * @param {vector<string>} studentGrades
-	 * @param {int} tests
-	 * @param {vector<float>} test totals
-	 */
 	void UpdateTotals(vector<string> studentGrades, int tests, vector<float> &testTotals){
 		for(int i = 0; i < tests; i++){
 			testTotals[i] += stoi(studentGrades[i+1]);
 		}
 	}
 
-	/**
-	 * Calculates total average of each test
-	 * @method calculateTestAvg
-	 * @param {vector<float>} totals
-	 * @param {int} totalStudents
-	 * @param {int} totalTests
-	 * @param {vector<float>} testAverages
-	 */
 	void calculateTestAvg(vector<float> totals, int totalStudents, int totalTests, vector<float> &testAverages){
 		for(int i = 0; i < totalTests; i++){
 			testAverages[i] = totals[i]/totalStudents;
 		}
 	}
 
-	/**
-	 * Gets all the grades of the students from a file, and calculates thheir averages, and total averages and outputs it to the screen
-	 * @method CalculateGrades
-	 * @param {string} target
-	 */
 	void CalculateGrades(string target){
 		string line;
 		ifstream file;
