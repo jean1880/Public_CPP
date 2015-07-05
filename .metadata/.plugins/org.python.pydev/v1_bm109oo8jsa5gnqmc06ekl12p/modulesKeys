@@ -851,7 +851,6 @@ deluge.pluginmanagerbase|/usr/lib/python2.7/site-packages/deluge/pluginmanagerba
 deluge.plugins.__init__|/usr/lib/python2.7/site-packages/deluge/plugins/__init__.py
 deluge.plugins.init|/usr/lib/python2.7/site-packages/deluge/plugins/init.py
 deluge.plugins.pluginbase|/usr/lib/python2.7/site-packages/deluge/plugins/pluginbase.py
-deluge.rencode|/usr/lib/python2.7/site-packages/deluge/rencode.py
 deluge.ui.Win32IconImagePlugin|/usr/lib/python2.7/site-packages/deluge/ui/Win32IconImagePlugin.py
 deluge.ui.__init__|/usr/lib/python2.7/site-packages/deluge/ui/__init__.py
 deluge.ui.client|/usr/lib/python2.7/site-packages/deluge/ui/client.py
@@ -1262,9 +1261,12 @@ gi.overrides.GLib|/usr/lib64/python2.7/site-packages/gi/overrides/GLib.py
 gi.overrides.GObject|/usr/lib64/python2.7/site-packages/gi/overrides/GObject.py
 gi.overrides.Gdk|/usr/lib64/python2.7/site-packages/gi/overrides/Gdk.py
 gi.overrides.Gio|/usr/lib64/python2.7/site-packages/gi/overrides/Gio.py
+gi.overrides.Gst|/usr/lib64/python2.7/site-packages/gi/overrides/Gst.py
+gi.overrides.GstPbutils|/usr/lib64/python2.7/site-packages/gi/overrides/GstPbutils.py
 gi.overrides.Gtk|/usr/lib64/python2.7/site-packages/gi/overrides/Gtk.py
 gi.overrides.Pango|/usr/lib64/python2.7/site-packages/gi/overrides/Pango.py
 gi.overrides.__init__|/usr/lib64/python2.7/site-packages/gi/overrides/__init__.py
+gi.overrides._gi_gst|/usr/lib64/python2.7/site-packages/gi/overrides/_gi_gst.so
 gi.overrides.keysyms|/usr/lib64/python2.7/site-packages/gi/overrides/keysyms.py
 gi.pygtkcompat|/usr/lib64/python2.7/site-packages/gi/pygtkcompat.py
 gi.repository.__init__|/usr/lib64/python2.7/site-packages/gi/repository/__init__.py
@@ -2931,6 +2933,9 @@ quopri|/usr/lib64/python2.7/quopri.py
 random|/usr/lib64/python2.7/random.py
 re|/usr/lib64/python2.7/re.py
 readline|/usr/lib64/python2.7/lib-dynload/readline.so
+rencode.__init__|/usr/lib64/python2.7/site-packages/rencode/__init__.py
+rencode._rencode|/usr/lib64/python2.7/site-packages/rencode/_rencode.so
+rencode.rencode_orig|/usr/lib64/python2.7/site-packages/rencode/rencode_orig.py
 report.__init__|/usr/lib64/python2.7/site-packages/report/__init__.py
 report._pyreport|/usr/lib64/python2.7/site-packages/report/_pyreport.so
 report.accountmanager|/usr/lib64/python2.7/site-packages/report/accountmanager.py

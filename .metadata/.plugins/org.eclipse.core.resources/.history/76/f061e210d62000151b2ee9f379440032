@@ -1,0 +1,87 @@
+#include <iostream>
+#include <string>
+#include <limits>
+
+namespace std{
+	void ShowArrayMenu(){
+		cout << "/************** Array Max Sort **************/" << endl;
+		cout << "/* This program takes an array of integers    */" << endl;
+		cout << "/* and sorts them into the largest possible   */" << endl;
+		cout << "/* number                                     */" << endl;
+		cout << "/* -e | --exit      Exits the program         */" << endl;
+		cout << "/* -h | --help      Shows this menu again     */" << endl;
+		cout << "/* -r | --run       Calculates largest number */" << endl;
+		cout << "/**********************************************/" << endl;
+	}
+
+	vector<int> SortValues(vector<int> integerArray){
+		vector<int> sortedIntegers;
+
+		for(int i = integerArray).size(); i == 0; i--){
+
+		}
+
+		return sortedIntegers;
+	}
+
+	int GetInput(){
+		string input;
+		int value;
+		try{
+			cout << "Please enter an integer for the array" << endl;
+			cin >> input;
+			if(input == "-e" || input == "--exit"){ // exit program
+				value = -1;
+			}else if(input == "-h" || input == "--help"){ // show menu again
+				value = -2;
+			}else if(input == "-r" || input == "--run"){ // show menu again
+				value = -3;
+			}else{
+				value = stoi(input);
+				if(value <= 0 || value > 99){
+					cout << "Input must be a positive value between 1-99" << endl;
+					cin.clear();
+					cin.ignore(numeric_limits<streamsize>::max(), '\n');
+					value = GetInput();
+				}
+			}
+		}catch(invalid_argument &e){
+			// invalid entry recall for get input
+			cout << "Input must be an integer to be valid" << endl;
+			cin.clear();
+			cin.ignore(numeric_limits<streamsize>::max(), '\n');
+			value = GetInput();
+		}catch(out_of_range &e){
+			cout << "Integer is too large to be processed, please enter a smaller value" << endl;
+			cin.clear();
+			cin.ignore(numeric_limits<streamsize>::max(), '\n');
+			value = GetInput();
+		}
+
+		return value;
+	}
+
+	bool RunQuestion3(){
+		vector<int> integerArray;
+
+		ShowArrayMenu();
+		int input;
+
+		// get integers and add the to vector
+		while((input = GetInput()), input != -1){
+			if(input == -2){
+				ShowArrayMenu();
+			}else if(input == -3){
+				if(integerArray.size() > 1){
+					SortValues(integerArray);
+				}else{
+					cout << "You need at least two integers before the calculation can run" << endl;
+				}
+			}else{
+				integerArray.push_back(input);
+			}
+		}
+
+		return false;
+	}
+}

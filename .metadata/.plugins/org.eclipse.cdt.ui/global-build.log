@@ -9327,3 +9327,1731 @@ Finished building target: Assignment 1.1
 20:24:45 **** Incremental Build of configuration Debug for project examMidTerm ****
 make all 
 make: Nothing to be done for 'all'.
+16:24:26 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+16:24:27 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+20:09:13 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void std::DoQuestion2()’:
+../main.cpp:48:3: error: ‘ReadGrades’ is not a member of ‘std’
+   std::ReadGrades("grades.txt");
+   ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+20:09:14 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+20:09:32 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void std::DoQuestion2()’:
+../main.cpp:48:3: error: ‘ReadGrades’ is not a member of ‘std’
+   std::ReadGrades("grades.txt");
+   ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+20:09:33 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+20:09:52 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void std::DoQuestion2()’:
+../main.cpp:48:3: error: ‘ReadGrades’ is not a member of ‘std’
+   std::ReadGrades("grades.txt");
+   ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+20:09:53 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+20:10:03 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void std::DoQuestion2()’:
+../main.cpp:48:3: error: ‘ReadGrades’ is not a member of ‘std’
+   std::ReadGrades("grades.txt");
+   ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+20:10:03 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+20:10:19 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:7:0:
+../question2.h: In function ‘void std::PrintWelcomeMessage()’:
+../question2.h:11:7: error: redefinition of ‘void std::PrintWelcomeMessage()’
+  void PrintWelcomeMessage(){
+       ^
+In file included from ../main.cpp:6:0:
+../question1.h:249:7: note: ‘void std::PrintWelcomeMessage()’ previously defined here
+  void PrintWelcomeMessage(){
+       ^
+In file included from ../main.cpp:7:0:
+../question2.h: In function ‘void std::ReadGrades(std::string)’:
+../question2.h:20:15: error: could not convert ‘file.std::basic_ifstream<_CharT, _Traits>::open<char, std::char_traits<char> >(target, (std::_Ios_Openmode)8u)’ from ‘void’ to ‘bool’
+   if(file.open(target)){
+               ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+20:10:20 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+20:10:44 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:7:0:
+../question2.h: In function ‘void std::ReadGrades(std::string)’:
+../question2.h:20:15: error: could not convert ‘file.std::basic_ifstream<_CharT, _Traits>::open<char, std::char_traits<char> >(target, (std::_Ios_Openmode)8u)’ from ‘void’ to ‘bool’
+   if(file.open(target)){
+               ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+20:10:45 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+20:14:03 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+20:14:04 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+20:15:01 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:15:01 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+20:17:45 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:8:0:
+../MenuInterface.h: In function ‘int std::GetOption()’:
+../MenuInterface.h:28:28: error: ‘option’ was not declared in this scope
+   int selected = CheckExit(option);
+                            ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+20:17:46 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+20:17:55 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+20:17:56 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+20:19:19 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+20:19:20 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+20:22:51 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void std::DoQuestion2()’:
+../main.cpp:49:15: error: expected unqualified-id before ‘=’ token
+   vector<int> = std::ReadGrades("grades.txt");
+               ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+20:22:51 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:04:16 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:7:0:
+../question2.h: In function ‘std::vector<int>* std::ReadGrades(std::string)’:
+../question2.h:27:24: error: conversion from ‘char’ to non-scalar type ‘std::string {aka std::basic_string<char>}’ requested
+     string delimiter = ' ';
+                        ^
+../question2.h:51:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../main.cpp: In function ‘void std::DoQuestion2()’:
+../main.cpp:49:15: error: expected unqualified-id before ‘=’ token
+   vector<int> = std::ReadGrades("grades.txt");
+               ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+21:04:17 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:04:25 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:7:0:
+../question2.h: In function ‘std::vector<int>* std::ReadGrades(std::string)’:
+../question2.h:51:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../main.cpp: In function ‘void std::DoQuestion2()’:
+../main.cpp:49:15: error: expected unqualified-id before ‘=’ token
+   vector<int> = std::ReadGrades("grades.txt");
+               ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+21:04:26 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:04:48 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:7:0:
+../question2.h: In function ‘std::vector<std::vector<int> > std::ReadGrades(std::string)’:
+../question2.h:51:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../main.cpp: In function ‘void std::DoQuestion2()’:
+../main.cpp:49:15: error: expected unqualified-id before ‘=’ token
+   vector<int> = std::ReadGrades("grades.txt");
+               ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+21:04:49 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:05:07 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:7:0:
+../question2.h: In function ‘std::vector<std::vector<int> > std::ReadGrades(std::string)’:
+../question2.h:51:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+21:05:08 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:06:05 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:7:0:
+../question2.h: In function ‘std::vector<std::vector<int> > std::ReadGrades(std::string)’:
+../question2.h:52:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+21:06:06 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:10:29 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void std::DoQuestion2()’:
+../main.cpp:49:34: error: ‘CalculateGrades’ is not a member of ‘std’
+   vector<string> studentGrades = std::CalculateGrades("grades.txt");
+                                  ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+21:10:29 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:10:38 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void std::DoQuestion2()’:
+../main.cpp:49:34: error: ‘CalculateGrades’ is not a member of ‘std’
+   vector<string> studentGrades = std::CalculateGrades("grades.txt");
+                                  ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+21:10:39 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:10:53 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void std::DoQuestion2()’:
+../main.cpp:49:34: error: ‘CalculateGrades’ is not a member of ‘std’
+   vector<string> studentGrades = std::CalculateGrades("grades.txt");
+                                  ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+21:10:54 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:10:57 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:7:0:
+../question2.h: In function ‘std::vector<std::basic_string<char> > std::CalculateGrades(std::string)’:
+../question2.h:51:10: error: could not convert ‘studentGrades’ from ‘std::vector<std::vector<int> >’ to ‘std::vector<std::basic_string<char> >’
+   return studentGrades;
+          ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+21:10:58 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:11:08 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+21:11:09 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:13:56 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:7:0:
+../question2.h: In function ‘std::vector<std::basic_string<char> > std::ParseGradeLine(std::string)’:
+../question2.h:28:33: error: no matching function for call to ‘std::vector<std::basic_string<char> >::push_back(int)’
+    details.push_back(stoi(token));
+                                 ^
+In file included from /usr/include/c++/5.1.1/vector:64:0,
+                 from ../question1.h:13,
+                 from ../main.cpp:6:
+/usr/include/c++/5.1.1/bits/stl_vector.h:913:7: note: candidate: void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >; std::vector<_Tp, _Alloc>::value_type = std::basic_string<char>]
+       push_back(const value_type& __x)
+       ^
+/usr/include/c++/5.1.1/bits/stl_vector.h:913:7: note:   no known conversion for argument 1 from ‘int’ to ‘const value_type& {aka const std::basic_string<char>&}’
+/usr/include/c++/5.1.1/bits/stl_vector.h:931:7: note: candidate: void std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >; std::vector<_Tp, _Alloc>::value_type = std::basic_string<char>]
+       push_back(value_type&& __x)
+       ^
+/usr/include/c++/5.1.1/bits/stl_vector.h:931:7: note:   no known conversion for argument 1 from ‘int’ to ‘std::vector<std::basic_string<char> >::value_type&& {aka std::basic_string<char>&&}’
+In file included from ../main.cpp:7:0:
+../question2.h:31:31: error: no matching function for call to ‘std::vector<std::basic_string<char> >::push_back(int)’
+   details.push_back(stoi(line));
+                               ^
+In file included from /usr/include/c++/5.1.1/vector:64:0,
+                 from ../question1.h:13,
+                 from ../main.cpp:6:
+/usr/include/c++/5.1.1/bits/stl_vector.h:913:7: note: candidate: void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >; std::vector<_Tp, _Alloc>::value_type = std::basic_string<char>]
+       push_back(const value_type& __x)
+       ^
+/usr/include/c++/5.1.1/bits/stl_vector.h:913:7: note:   no known conversion for argument 1 from ‘int’ to ‘const value_type& {aka const std::basic_string<char>&}’
+/usr/include/c++/5.1.1/bits/stl_vector.h:931:7: note: candidate: void std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >; std::vector<_Tp, _Alloc>::value_type = std::basic_string<char>]
+       push_back(value_type&& __x)
+       ^
+/usr/include/c++/5.1.1/bits/stl_vector.h:931:7: note:   no known conversion for argument 1 from ‘int’ to ‘std::vector<std::basic_string<char> >::value_type&& {aka std::basic_string<char>&&}’
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+21:13:56 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:14:09 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+21:14:10 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:27:17 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:7:0:
+../question2.h: In function ‘std::vector<std::basic_string<char> > std::CalculateGrades(std::string)’:
+../question2.h:64:8: warning: unused variable ‘studentAverage’ [-Wunused-variable]
+    int studentAverage = CalculateAverage(studentGrades, details[1]);
+        ^
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+21:27:18 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:27:35 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:7:0:
+../question2.h: In function ‘std::vector<std::basic_string<char> > std::CalculateGrades(std::string)’:
+../question2.h:64:8: warning: unused variable ‘studentAverage’ [-Wunused-variable]
+    int studentAverage = CalculateAverage(studentGrades, details[1]);
+        ^
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+21:27:36 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:28:05 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+21:28:06 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:28:28 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+21:28:29 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:28:41 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+21:28:42 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:29:05 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+21:29:06 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:34:46 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+21:34:47 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:36:01 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+21:36:02 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:37:02 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+21:37:03 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:39:32 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+21:39:33 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:56:59 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+21:57:03 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:57:41 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+21:57:44 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+21:58:33 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+21:58:34 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+22:02:27 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:7:0:
+../question2.h: In function ‘std::vector<std::basic_string<char> > std::CalculateGrades(std::string)’:
+../question2.h:69:5: error: expected initializer before ‘CalculateAverage’
+     CalculateAverage(studentGrades, details[1], studentAverage);
+     ^
+../question2.h:76:34: error: ‘studentAverage’ was not declared in this scope
+     cout << setw(formatWidth) << studentAverage << endl;
+                                  ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+22:02:28 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+22:02:38 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+22:02:40 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+22:05:55 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:7:0:
+../question2.h: In function ‘void std::PrintGrades(int, std::vector<std::basic_string<char> >, float, int)’:
+../question2.h:49:22: error: ‘details’ was not declared in this scope
+   for(int y = 0; y < details[1]; y++){
+                      ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+22:05:56 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+22:06:12 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+22:06:13 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+22:15:00 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+22:15:00 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+22:26:15 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:7:0:
+../question2.h: In function ‘char std::GetGradeValue(float)’:
+../question2.h:48:15: error: switch quantity not an integer
+   switch(grade){
+               ^
+../question2.h:49:18: error: ‘grade’ is not a constant expression
+    case grade >= 90:
+                  ^
+../question2.h:52:18: error: ‘grade’ is not a constant expression
+    case grade >= 80:
+                  ^
+../question2.h:55:18: error: ‘grade’ is not a constant expression
+    case grade >= 70:
+                  ^
+../question2.h:58:18: error: ‘grade’ is not a constant expression
+    case grade >= 60:
+                  ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+22:26:16 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+22:26:24 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:7:0:
+../question2.h: In function ‘char std::GetGradeValue(float)’:
+../question2.h:48:15: error: switch quantity not an integer
+   switch(grade){
+               ^
+../question2.h:49:18: error: ‘grade’ is not a constant expression
+    case grade >= 90:
+                  ^
+../question2.h:52:18: error: ‘grade’ is not a constant expression
+    case grade >= 80:
+                  ^
+../question2.h:55:18: error: ‘grade’ is not a constant expression
+    case grade >= 70:
+                  ^
+../question2.h:58:18: error: ‘grade’ is not a constant expression
+    case grade >= 60:
+                  ^
+../question2.h: In function ‘void std::PrintGrades(int, std::vector<std::basic_string<char> >, float, char, int)’:
+../question2.h:74:50: error: expected primary-expression before ‘<<’ token
+   cout << setw(formatWidth) << studentAverage << << setw(formatWidth) << grade << endl;
+                                                  ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+22:26:25 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+22:26:30 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:7:0:
+../question2.h: In function ‘char std::GetGradeValue(float)’:
+../question2.h:48:15: error: switch quantity not an integer
+   switch(grade){
+               ^
+../question2.h:49:18: error: ‘grade’ is not a constant expression
+    case grade >= 90:
+                  ^
+../question2.h:52:18: error: ‘grade’ is not a constant expression
+    case grade >= 80:
+                  ^
+../question2.h:55:18: error: ‘grade’ is not a constant expression
+    case grade >= 70:
+                  ^
+../question2.h:58:18: error: ‘grade’ is not a constant expression
+    case grade >= 60:
+                  ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+22:26:31 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+22:27:04 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:7:0:
+../question2.h: In function ‘char std::GetGradeValue(int)’:
+../question2.h:49:18: error: ‘grade’ is not a constant expression
+    case grade >= 90:
+                  ^
+../question2.h:52:18: error: ‘grade’ is not a constant expression
+    case grade >= 80:
+                  ^
+../question2.h:55:18: error: ‘grade’ is not a constant expression
+    case grade >= 70:
+                  ^
+../question2.h:58:18: error: ‘grade’ is not a constant expression
+    case grade >= 60:
+                  ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+22:27:05 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+22:27:29 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:7:0:
+../question2.h: In function ‘char std::GetGradeValue(int)’:
+../question2.h:49:18: error: ‘grade’ is not a constant expression
+    case grade >= 90:
+                  ^
+../question2.h:52:18: error: ‘grade’ is not a constant expression
+    case grade >= 80:
+                  ^
+../question2.h:55:18: error: ‘grade’ is not a constant expression
+    case grade >= 70:
+                  ^
+../question2.h:58:18: error: ‘grade’ is not a constant expression
+    case grade >= 60:
+                  ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+22:27:30 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+22:29:25 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+22:29:26 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+22:31:07 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+22:31:08 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+22:48:10 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:7:0:
+../question2.h: In function ‘void std::PrintAverages(std::vector<float>, int, int)’:
+../question2.h:68:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+../question2.h: In function ‘std::vector<std::basic_string<char> > std::CalculateGrades(std::string)’:
+../question2.h:136:41: error: too few arguments to function ‘void std::PrintAverages(std::vector<float>, int, int)’
+   PrintAverages(testAverages, details[1]);
+                                         ^
+../question2.h:62:7: note: declared here
+  void PrintAverages(vector<float> averages, int tests, const int formatWidth){
+       ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+22:48:11 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+22:48:12 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:7:0:
+../question2.h: In function ‘std::vector<std::basic_string<char> > std::CalculateGrades(std::string)’:
+../question2.h:136:41: error: too few arguments to function ‘void std::PrintAverages(std::vector<float>, int, int)’
+   PrintAverages(testAverages, details[1]);
+                                         ^
+../question2.h:62:7: note: declared here
+  void PrintAverages(vector<float> averages, int tests, const int formatWidth){
+       ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+22:48:13 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+22:48:28 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+22:48:30 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+22:54:00 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+22:54:01 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+23:02:09 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+23:02:11 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+23:04:22 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:7:0:
+../question2.h: In function ‘void std::CalculateGrades(std::string)’:
+../question2.h:148:10: error: return-statement with a value, in function returning 'void' [-fpermissive]
+   return studentGrades;
+          ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+23:04:23 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+23:06:58 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+23:07:00 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+11:45:43 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘bool std::MenuInterface()’:
+../main.cpp:72:4: error: ‘DoQuestion3’ is not a member of ‘std’
+    std::DoQuestion3();
+    ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+11:45:44 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+11:45:48 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘bool std::MenuInterface()’:
+../main.cpp:72:4: error: ‘DoQuestion3’ is not a member of ‘std’
+    std::DoQuestion3();
+    ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+11:45:49 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+11:46:11 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void std::DoQuestion2()’:
+../main.cpp:49:9: error: ‘RunQuestion3’ is not a member of ‘std’
+   while(std::RunQuestion3());
+         ^
+../main.cpp: In function ‘void std::DoQuestion2()’:
+../main.cpp:52:7: error: redefinition of ‘void std::DoQuestion2()’
+  void DoQuestion2(){
+       ^
+../main.cpp:48:7: note: ‘void std::DoQuestion2()’ previously defined here
+  void DoQuestion2(){
+       ^
+../main.cpp: In function ‘bool std::MenuInterface()’:
+../main.cpp:76:4: error: ‘DoQuestion3’ is not a member of ‘std’
+    std::DoQuestion3();
+    ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+11:46:12 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+11:46:30 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:8:0:
+../question3.h: In function ‘std::vector<int> std::GetIntegerArray()’:
+../question3.h:8:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../question3.h: In function ‘int std::GetInput()’:
+../question3.h:22:7: warning: variable ‘value’ set but not used [-Wunused-but-set-variable]
+   int value;
+       ^
+../main.cpp: In function ‘void std::DoQuestion2()’:
+../main.cpp:53:7: error: redefinition of ‘void std::DoQuestion2()’
+  void DoQuestion2(){
+       ^
+../main.cpp:49:7: note: ‘void std::DoQuestion2()’ previously defined here
+  void DoQuestion2(){
+       ^
+../main.cpp: In function ‘bool std::MenuInterface()’:
+../main.cpp:77:4: error: ‘DoQuestion3’ is not a member of ‘std’
+    std::DoQuestion3();
+    ^
+In file included from ../main.cpp:8:0:
+../question3.h: In function ‘int std::GetInput()’:
+../question3.h:45:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+11:46:31 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+11:46:37 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:8:0:
+../question3.h: In function ‘std::vector<int> std::GetIntegerArray()’:
+../question3.h:8:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../question3.h: In function ‘int std::GetInput()’:
+../question3.h:22:7: warning: variable ‘value’ set but not used [-Wunused-but-set-variable]
+   int value;
+       ^
+../question3.h:45:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+11:46:39 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+11:46:59 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:8:0:
+../question3.h: In function ‘std::vector<int> std::GetIntegerArray()’:
+../question3.h:8:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../question3.h: In function ‘int std::GetInput()’:
+../question3.h:22:7: warning: variable ‘value’ set but not used [-Wunused-but-set-variable]
+   int value;
+       ^
+../question3.h:45:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+11:47:00 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+11:47:47 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:8:0:
+../question3.h: In function ‘std::vector<int> std::GetIntegerArray()’:
+../question3.h:8:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../question3.h: In function ‘int std::GetInput()’:
+../question3.h:22:7: warning: variable ‘value’ set but not used [-Wunused-but-set-variable]
+   int value;
+       ^
+../question3.h:45:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+11:47:49 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+11:48:03 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:8:0:
+../question3.h: In function ‘std::vector<int> std::GetIntegerArray()’:
+../question3.h:8:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../question3.h: In function ‘int std::GetInput()’:
+../question3.h:22:7: warning: variable ‘value’ set but not used [-Wunused-but-set-variable]
+   int value;
+       ^
+../question3.h:45:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+11:48:05 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+11:48:47 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:8:0:
+../question3.h: In function ‘std::vector<int> std::GetIntegerArray()’:
+../question3.h:8:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+11:48:49 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+11:49:08 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:8:0:
+../question3.h: In function ‘std::vector<int> std::GetIntegerArray()’:
+../question3.h:8:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+11:49:10 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+11:50:22 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+11:50:22 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+11:52:02 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:8:0:
+../question3.h: In function ‘std::vector<int> std::GetIntegerArray()’:
+../question3.h:8:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+11:52:04 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+11:53:08 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:8:0:
+../question3.h: In function ‘std::vector<int> std::GetIntegerArray()’:
+../question3.h:8:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+11:53:10 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+12:01:19 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:8:0:
+../question3.h: In function ‘bool std::RunQuestion3()’:
+../question3.h:59:3: error: expected initializer before ‘while’
+   while((input == GetInput()) != -1){
+   ^
+../main.cpp:85:1: error: expected ‘}’ at end of input
+ }
+ ^
+../main.cpp:85:1: warning: no return statement in function returning non-void [-Wreturn-type]
+../main.cpp: At global scope:
+../main.cpp:85:1: error: expected ‘}’ at end of input
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+12:01:20 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+12:01:46 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:8:0:
+../question3.h: In function ‘bool std::RunQuestion3()’:
+../question3.h:59:31: warning: comparison of constant ‘-1’ with boolean expression is always true [-Wbool-compare]
+   while((input == GetInput()) != -1){
+                               ^
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+12:01:47 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+12:02:32 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+12:02:33 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+12:04:45 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:8:0:
+../question3.h: In function ‘std::vector<int> std::SortValues(std::vector<int>)’:
+../question3.h:19:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+12:04:46 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+12:05:53 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:8:0:
+../question3.h: In function ‘std::vector<int> std::SortValues(std::vector<int>)’:
+../question3.h:19:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+12:05:54 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+12:09:37 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:8:0:
+../question3.h: In function ‘std::vector<int> std::SortValues(std::vector<int>)’:
+../question3.h:19:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+12:09:38 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+12:10:13 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:8:0:
+../question3.h: In function ‘std::vector<int> std::SortValues(std::vector<int>)’:
+../question3.h:19:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+12:10:14 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+12:13:08 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:8:0:
+../question3.h: In function ‘std::vector<int> std::SortValues(std::vector<int>)’:
+../question3.h:19:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+12:13:09 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+12:15:31 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:8:0:
+../question3.h: In function ‘std::vector<int> std::SortValues(std::vector<int>)’:
+../question3.h:20:15: error: cannot convert ‘std::vector<int>’ to ‘int’ in initialization
+   for(int i = integerArray).size(); i == 0; i--){
+               ^
+../question3.h:20:27: error: expected ‘;’ before ‘)’ token
+   for(int i = integerArray).size(); i == 0; i--){
+                           ^
+../question3.h:20:27: error: expected primary-expression before ‘)’ token
+../question3.h:20:27: error: expected ‘;’ before ‘)’ token
+../question3.h:20:28: error: expected primary-expression before ‘.’ token
+   for(int i = integerArray).size(); i == 0; i--){
+                            ^
+../question3.h:20:11: warning: unused variable ‘i’ [-Wunused-variable]
+   for(int i = integerArray).size(); i == 0; i--){
+           ^
+../question3.h:20:37: error: ‘i’ was not declared in this scope
+   for(int i = integerArray).size(); i == 0; i--){
+                                     ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+12:15:32 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+12:19:11 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+12:19:12 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+12:43:24 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:8:0:
+../question3.h: In function ‘bool std::RunQuestion3()’:
+../question3.h:97:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+      for(int i = 0; i < integerArray.size(); i++){
+                       ^
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+12:43:26 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+12:43:44 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+12:43:46 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+12:45:14 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:8:0:
+../question3.h: In function ‘void std::InsertIntoSortedValues(std::vector<int>&, int, int)’:
+../question3.h:20:39: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   }else if(integer = sortedIntegers[n]){
+                                       ^
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+12:45:16 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+12:45:33 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+12:45:35 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+12:46:13 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+12:46:15 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+12:54:30 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+12:54:33 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+16:54:23 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+16:54:27 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+17:12:33 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+17:12:37 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+17:27:40 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+17:27:43 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+17:29:10 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+17:29:13 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+17:29:58 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+17:30:02 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+17:30:47 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+17:30:51 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+17:33:22 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+17:33:25 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+18:19:01 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+18:19:04 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+18:49:39 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:8:0:
+../question3.h: In function ‘std::vector<int> std::SortValues(std::vector<int>)’:
+../question3.h:35:36: error: conversion from ‘std::vector<int>*’ to non-scalar type ‘std::vector<int>’ requested
+   vector<int> sortedIntegers = new vector<int>;
+                                    ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+18:49:41 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+18:50:29 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Assignment 1.1
+Invoking: GCC C++ Linker
+g++  -o "Assignment 1.1"  ./main.o   
+Finished building target: Assignment 1.1
+ 
+18:50:32 **** Incremental Build of configuration Debug for project examMidTerm ****
+make all 
+make: Nothing to be done for 'all'.
+12:15:41 **** Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/Program Files/Java/jre1.8.0_45/bin/server;C:/Program Files/Java/jre1.8.0_45/bin;C:/Program Files/Java/jre1.8.0_45/lib/amd64;C:\tools\ruby21\bin;C:\ProgramData\Oracle\Java\javapath;C:\tools\ruby215\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Git\cmd;C:\tools\python;C:\Program Files (x86)\vim\vim74;C:\Program Files\Java\jdk1.8.0_31\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Java\jdk1.8.0_40\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Brackets\command;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI\wbin;C:\Program Files\Calibre2\;C:\tools\python2;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Git\bin;C:\Program Files\MongoDB\Server\3.0\bin;C:\Users\Jean-Luc\AppData\Local\Android\sdk\platform-tools\;C:\Users\Jean-Luc\AppData\Local\Android\sdk\tools\;C:\tools\apache-ant-1.9.4\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.bin;C:\Users\Jean-Luc\AppData\Local\Code\bin;C:\Users\Jean-Luc\AppData\Roaming\npm;C:\PROGRA~2\Oracle\VirtualBox;;C:\Program Files\Eclipse Foundation\4.4.2\eclipse;]
+12:23:31 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/Program Files/Java/jre1.8.0_45/bin/server;C:/Program Files/Java/jre1.8.0_45/bin;C:/Program Files/Java/jre1.8.0_45/lib/amd64;C:\tools\ruby21\bin;C:\ProgramData\Oracle\Java\javapath;C:\tools\ruby215\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Git\cmd;C:\tools\python;C:\Program Files (x86)\vim\vim74;C:\Program Files\Java\jdk1.8.0_31\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Java\jdk1.8.0_40\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Brackets\command;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI\wbin;C:\Program Files\Calibre2\;C:\tools\python2;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Git\bin;C:\Program Files\MongoDB\Server\3.0\bin;C:\Users\Jean-Luc\AppData\Local\Android\sdk\platform-tools\;C:\Users\Jean-Luc\AppData\Local\Android\sdk\tools\;C:\tools\apache-ant-1.9.4\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.bin;C:\Users\Jean-Luc\AppData\Local\Code\bin;C:\Users\Jean-Luc\AppData\Roaming\npm;C:\PROGRA~2\Oracle\VirtualBox;;C:\Program Files\Eclipse Foundation\4.4.2\eclipse;]
+12:23:45 **** Incremental Build of configuration Debug for project Assignment 1.1 ****
+make -j4 all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/Program Files/Java/jre1.8.0_45/bin/server;C:/Program Files/Java/jre1.8.0_45/bin;C:/Program Files/Java/jre1.8.0_45/lib/amd64;C:\tools\ruby21\bin;C:\ProgramData\Oracle\Java\javapath;C:\tools\ruby215\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Git\cmd;C:\tools\python;C:\Program Files (x86)\vim\vim74;C:\Program Files\Java\jdk1.8.0_31\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Java\jdk1.8.0_40\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Brackets\command;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI\wbin;C:\Program Files\Calibre2\;C:\tools\python2;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Git\bin;C:\Program Files\MongoDB\Server\3.0\bin;C:\Users\Jean-Luc\AppData\Local\Android\sdk\platform-tools\;C:\Users\Jean-Luc\AppData\Local\Android\sdk\tools\;C:\tools\apache-ant-1.9.4\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.bin;C:\Users\Jean-Luc\AppData\Local\Code\bin;C:\Users\Jean-Luc\AppData\Roaming\npm;C:\PROGRA~2\Oracle\VirtualBox;;C:\Program Files\Eclipse Foundation\4.4.2\eclipse;]
+12:24:22 **** Building Selected Files of configuration Debug for project Assignment 1.1 ****
+Info: Internal Builder is used for build
+g++ -std=c++14 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o main.o "..\\main.cpp" 
+Cannot run program "g++": Launching failed
+
+Error: Program "g++" not found in PATH
+PATH=[C:/Program Files/Java/jre1.8.0_45/bin/server;C:/Program Files/Java/jre1.8.0_45/bin;C:/Program Files/Java/jre1.8.0_45/lib/amd64;C:\tools\ruby21\bin;C:\ProgramData\Oracle\Java\javapath;C:\tools\ruby215\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Git\cmd;C:\tools\python;C:\Program Files (x86)\vim\vim74;C:\Program Files\Java\jdk1.8.0_31\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Java\jdk1.8.0_40\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Brackets\command;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI\wbin;C:\Program Files\Calibre2\;C:\tools\python2;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Git\bin;C:\Program Files\MongoDB\Server\3.0\bin;C:\Users\Jean-Luc\AppData\Local\Android\sdk\platform-tools\;C:\Users\Jean-Luc\AppData\Local\Android\sdk\tools\;C:\tools\apache-ant-1.9.4\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.bin;C:\Users\Jean-Luc\AppData\Local\Code\bin;C:\Users\Jean-Luc\AppData\Roaming\npm;C:\PROGRA~2\Oracle\VirtualBox;;C:\Program Files\Eclipse Foundation\4.4.2\eclipse;]
+

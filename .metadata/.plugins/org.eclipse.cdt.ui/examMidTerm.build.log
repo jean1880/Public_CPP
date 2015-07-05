@@ -1,6 +1,6 @@
-20:24:45 **** Incremental Build of configuration Debug for project examMidTerm ****
+18:50:32 **** Incremental Build of configuration Debug for project examMidTerm ****
 make all 
 make: Nothing to be done for 'all'.
 
-20:24:45 Build Finished (took 59ms)
+18:50:32 Build Finished (took 115ms)
 

@@ -1,0 +1,73 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+
+
+namespace std{
+	/**
+	 * Prints out welcome message to the user
+	 * @method PrintWelcomeMessage
+	 */
+	void PrintGradingWelcomeMessage(){
+		cout << '/' << string(50, '*') << '/' << endl;
+		cout << "/*******" << " Welcome to the Grading Schema Program " << "*******/" << endl;
+	}
+
+	vector<string> ParseLine(string line){
+		vector<string> details;
+		string delimiter = " ";
+		size_t pos = 0;
+		string token;
+
+		unsigned int x = 0;
+		while ((pos = line.find(delimiter)) != string::npos) {
+
+			token = line.substr(0, pos);
+			line.erase(0, pos + delimiter.length());
+
+			details.push_back(token);
+			x++;
+		}
+		details.push_back(line);
+		return details;
+	}
+
+	int CalculateAverage (vector<string> student, int grades){
+		int sum;
+
+		for(int i = 0; i < grades; i++){
+			sum += stoi(student[i+1]);
+		}
+
+		return 0;
+	}
+
+	vector<string> CalculateGrades(string target){
+		string line;
+		ifstream file;
+		int details[2];
+		vector<string> studentGrades;
+		file.open(target);
+		// try and open target file
+		unsigned int i = 0;
+		while ( getline (file,line) )
+		{
+			if(i==0){
+				vector<string> temp = ParseLine(line);
+				details[0] = stoi(temp[0]);
+				details[1] = stoi(temp[1]);
+				cout << details[0] << " Students " << details[1] << " Grades" << endl;
+			}else{
+				studentGrades = ParseLine(line);
+			}
+
+			int studentAverage = CalculateAverage(studentGrades, details[1]);
+
+			i++;
+		}
+
+		// close file when done
+		file.close();
+		return studentGrades;
+	}
+}

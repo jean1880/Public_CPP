@@ -1,0 +1,33 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+
+
+namespace std{
+	/**
+	 * Prints out welcome message to the user
+	 * @method PrintWelcomeMessage
+	 */
+	void PrintWelcomeMessage(){
+		cout << '/' << string(50, '*') << '/' << endl;
+		cout << "/*******" << " Welcome to the Grading Schema Program " << "*******/" << endl;
+	}
+
+	void ReadGrades(string target){
+		ifstream file;
+		// try and open target file
+		if(file.open(target)){
+			while ( getline (myfile,line) )
+			{
+
+				// check how many students there will be
+
+				// check how manygrades there will be for each student
+				cout << line << '\n';
+			}
+
+			// close file when done
+			file.close();
+		}
+	}
+}
